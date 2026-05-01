@@ -1,16 +1,79 @@
-# React + Vite
+# 🧠 MongoDB to SQL Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application that converts MongoDB queries into SQL queries in real time.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* 🔄 Convert MongoDB queries to SQL
+* ⚡ Fast and responsive UI using Vite + React
+* 🌐 Backend powered by Express.js
+* 🎯 Supports common MongoDB operators like `$gt`, `$lt`, `$eq`, etc.
 
-## React Compiler
+## 🛠 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Frontend: React + Vite + Tailwind CSS
+* Backend: Node.js + Express
+* Language: JavaScript
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+mongo-to-sql/
+│── src/              # Frontend (React)
+│── public/           # Static assets
+│── server.js         # Backend server
+│── package.json
+│── vite.config.js
+```
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+
+```
+git clone https://github.com/your-username/mongo-to-sql.git
+cd mongo-to-sql
+```
+
+### 2. Install dependencies
+
+```
+npm install
+```
+
+### 3. Run the backend
+
+```
+node server.js
+```
+
+### 4. Run the frontend
+
+```
+npm run dev
+```
+
+## 📌 Example
+
+### MongoDB Query:
+
+```
+db.users.find({ age: { $gt: 21 } })
+```
+
+### SQL Output:
+
+```
+SELECT * FROM users WHERE age > 21;
+```
+
+## 🧪 Future Improvements
+
+* Add support for complex nested queries
+* Improve UI/UX
+* Add authentication
+* Deploy to cloud (Vercel + Render)
+
+## 👨‍💻 Author
+
+Apoorva Soni
